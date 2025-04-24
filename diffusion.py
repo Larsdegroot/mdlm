@@ -13,10 +13,11 @@ import torchmetrics
 import transformers
 from torch import Tensor
 
-import dataloader
-import models
-import noise_schedule
-import utils
+# using relative imports because i'm treating this repo as a python module
+from . import dataloader
+from . import models
+from . import noise_schedule
+from . import utils
 
 LOG2 = math.log(2)
 

@@ -8,9 +8,10 @@ import rich.syntax
 import rich.tree
 import torch
 
-import dataloader
-import diffusion
-import utils
+# using relative imports because i'm treating this repo as a python module
+from . import dataloader
+from . import utils
+from . import diffusion
 
 omegaconf.OmegaConf.register_new_resolver(
   'cwd', os.getcwd)

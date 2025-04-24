@@ -16,7 +16,8 @@ import tokenizers
 import torch
 import transformers
 
-import utils
+# using relative imports because i'm treating this repo as a python module
+from . import utils
 
 LOGGER = utils.get_logger(__name__)
 

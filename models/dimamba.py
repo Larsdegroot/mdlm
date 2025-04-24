@@ -36,7 +36,8 @@ from mamba_ssm.ops.triton.selective_state_update import (
     selective_state_update,
 )
 
-from models.dit import (
+# using relative imports because i'm treating this repo as a python module
+from .dit import (
     TimestepEmbedder,
     bias_dropout_add_scale_fused_inference,
     bias_dropout_add_scale_fused_train,
